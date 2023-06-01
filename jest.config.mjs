@@ -11,6 +11,10 @@ const config = {
   // Add more setup options before each test is run
   // setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
 
+  // Adding / removing moduleNameMapper doesn't seem to have any effect
+  moduleNameMapper: {
+    "^@/icons/(.*)$": "<rootDir>/assets/icons/$1",
+  },
   testEnvironment: "jest-environment-jsdom",
 };
 
